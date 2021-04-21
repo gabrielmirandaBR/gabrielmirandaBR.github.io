@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.input-container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+#btn-search {
+  margin-left: 15px;
+  width: 200px;
+}
+
+.video-container {
+  margin: 0 auto;
+  min-width: 250px;
+}
