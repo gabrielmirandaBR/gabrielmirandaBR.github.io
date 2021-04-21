@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/projects/login-instagram/css/style.css">
+    <title>Instagram</title>
+  </head>
+
+  <body>
+
+    <main>
+      <p>Número de visitas nº: <span id="visitors-numbers"></span></p>
+      <section class="main-container">
+        <section class="left-container">
+          <img src="./imgs/cels.png" alt="celulares">
+        </section>
+        <section class="right-container">
+          <section class="login-container">
+            <img src="./imgs/instagram-logo.png" alt="Instagram login-container" id="instagram-logo">
+            <div class="inputs-container">
+              <input class="input-login" atype="text" name="user" id="user-login" placeholder="Telefone, nome de usuário ou email" required>
+              <input class='input-login' type="text" name="password" id="password-login" placeholder="Senha" required>
+              <span id="mensage-password"></span>
+              <span id="mensage-error"></span>
+              <button id="btn-login">Entrar</button>
+            </div>
+            <div class="line-container">
+              <hr>
+              <span>OU</span>
+              <hr>
+            </div>
+            <div class="facebook-container">
+              <img src="./imgs/face-logo-removebg-preview.png" alt="Facebook logo">
+              <a href="#"><span>Entrar com o Facebook</span></a>
+            </div>
+            <a href="#" id="recovery-password">Esqueceu a senha?</a>
+          </section>
+          <section class="register-container">
+            <span id="mensage-register">Não tem uma conta?</span>
+            <a href="#" id="register-link"><span>Cadastre-se</span></a>
+          </section>
+          <section class="applications-container">
+            <span id="mensage-application">Obtenha o aplicativo</span>
+            <div class="applications-content">
+              <a href="#"> <img src="./imgs/apple-button.png" alt="App Store Store"></a>
+              <a href="#"><img src="./imgs/googleplay-button.png" alt="Google Play Store"></a>
+            </div>
+          </section>
+        </section>
+      </section>
+      <footer class="footer-container">
+        <div>
+          <a href="#">Sobre</a>
+          <a href="#">Blog</a>
+          <a href="#">Carreiras</a>
+          <a href="#">Ajuda</a>
+          <a href="#">API</a>
+          <a href="#">Privacidade</a>
+          <a href="#">Termos</a>
+          <a href="#">Contas mais relevantes</a>
+          <a href="#">Hashtags</a>
+          <a href="#">Localizações</a>
+          <a href="#">Beleza</a>
+          <a href="#">Dança e apresentação</a>
+          <a href="#">Fitness</a>
+          <a href="#">Comida e Bebida</a>
+          <a href="#">Casa e jardim</a>
+          <a href="#">Música</a>
+          <a href="#">Artes e visuais</a>
+        </div>
+        <div>
+          <a href="#">Português (Brasil)</a>
+          <a href="#">&#169 2021 Instagram do Facebook</a>
+        </div>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+
+  </body>
+</html>

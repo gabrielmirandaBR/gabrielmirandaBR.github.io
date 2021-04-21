@@ -1,0 +1,356 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+}
+
+body {
+  background: linear-gradient(white, #d3d8e8);
+  height: calc(100vh + 29px);
+}
+
+header {
+  display: flex;
+  background-color: #4267b2;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.top-bar {
+  display: flex;
+  width: 980px;
+  justify-content: space-between;
+  background-color: #4267b2;
+  padding-top: 13px;
+}
+
+.facebook-logo {
+  width: 170px;
+}
+
+.facebook-login {
+  display: flex;
+  align-self: flex-end;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 10px;
+}
+
+.form-group label {
+  color: white;
+  padding-bottom: 4px;
+}
+
+.form-group input {
+  height: 23px;
+  border: solid 1px black;
+  border-radius: 2px;
+  margin: 3px 10px 3px 0;
+  border-color: #1d2a5b;
+  width: 142px;
+}
+
+.form-group p {
+  padding-top: 4px;
+}
+
+.form-control {
+  display: flex;
+  align-self: flex-end;
+  margin-bottom: 30px;
+}
+
+#button-login {
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  border: solid 1px #29487d;
+  border-radius: 2px;
+  background-color: #4267b2;
+  padding: 3px 5px;
+}
+
+#reset-account , #reset-account:visited {
+  text-decoration: none;
+  color: #9cb4d8;
+}
+
+#reset-account:hover {
+  text-decoration: underline;
+}
+
+#button-login:hover {
+  background-color: #2d5cb9;
+}
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.left-content {
+  width: 800px;
+}
+
+#facebook-slogan {
+  color: #0e385f;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 29px;
+  margin-top: 40px;
+  width: 450px;
+}
+
+.right-content {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.text-right-content {
+  padding: 20px 0;
+}
+
+.right-content h1 {
+  font-size: 36px;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.quick-easy {
+  font-family: inherit;
+  color: #1d2129;
+  font-size: 19px;
+}
+
+.form-registration {
+  width: 400px;
+}
+
+.form-registration input {
+  padding: 8px 10px;
+  font-size: 18px;
+  border: 1px solid #ccd0d5;
+  border-radius: 5px;
+  border-color: #bdc7d8;
+}
+
+.initial-registration {
+  display: flex;
+  margin-right: 8px;
+  margin-bottom: 10px;
+}
+
+#firstname {
+  margin-right: 8px;
+  width: 172px;
+}
+
+#lastname {
+  width: 172px;
+}
+
+#phone-email , #password {
+  margin-bottom: 10px;
+  width: 352px;
+}
+
+.birthdate-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#birthdate {
+  width: 172px;
+}
+
+#label-birthdate {
+  margin-bottom: 5px;
+  margin-top: 10px;
+  color: #90949c;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.gender-container {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.gender-container label {
+  color: #1d2129;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  padding: 0 10px 0 3px;
+}
+
+#label-gender {
+  color: #90949c;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.34;
+}
+
+.label-gender-content {
+  margin-top: 10px;
+}
+
+#label-feminino , #label-masculino , #label-personalizado {
+  font-size: 18px;
+  color: #1d2129;
+}
+
+#facebook-register {
+  font-size: 19px;
+  margin: 30px 0;
+  padding: 10px;
+  text-align: center;
+  background: linear-gradient(#67ae55, #578843);
+  color: white;
+  border: 1px solid;
+  border-radius: 5px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  min-width: 194px;
+  border-color: #3b6e22 #3b6e22 #2c5115;
+  text-shadow: 0 1px 2px rgb(0 0 0 / 50%);
+}
+
+#error-message {
+  color: red;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+#facebook-enter-mobile {
+  display: none;
+}
+
+hr {
+  display: none;
+}
+
+#facebook-register-mobile {
+  display: none;
+}
+
+#forgot-password-mobile {
+  display: none;
+}
+
+@media screen and ( max-width : 500px ) {
+
+  .facebook-login {
+    display: none;
+  }
+
+  .left-content {
+    display: none;
+  }
+
+  .text-right-content {
+    display: none;
+  }
+
+  .initial-registration {
+    display: none;
+  }
+
+  .birthdate-container {
+    display: none;
+  }
+
+  .gender-container {
+    display: none;
+  }
+
+  #facebook-register {
+    display: none;
+  }
+
+  .top-bar {
+    padding: 0;
+    justify-content: center;
+  }
+
+  .facebook-logo {
+    width: 120px;
+  }
+
+  .form-registration {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #phone-email {
+    margin: 25px 0 0;
+    width: 400px;
+  }
+
+  #password {
+    width: 400px;
+  }
+
+  #facebook-enter-mobile {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    background-color: #2d5cb9;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    min-width: 400px;
+    border: none;
+    margin-top: 15px;
+  }
+
+  hr {
+    display: flex;
+    margin-top: 25px;
+    width: 400px;
+  }
+
+  #facebook-register-mobile {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 30px;
+    padding: 10px;
+    text-align: center;
+    background-color: #4c9925;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    min-width: 100px;
+    border: none;
+  }
+
+  #forgot-password-mobile {
+    display: block;
+    text-decoration: none;
+    color: #29487d;
+    margin-top: 15px;
+    font-size: 13px;
+  }
+
+  #forgot-password-mobile a:visited {
+    color: #29487d;
+  }
+}
